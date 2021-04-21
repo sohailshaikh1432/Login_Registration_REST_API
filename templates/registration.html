@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Signup</title>
+    </head>
+    <body bgcolor="#adffff">
+        <form action="registration" method="POST">
+            {% csrf_token %}
+            <h1>Sign up</h1>
+            User  Name : <input type="text" name="username"><br>
+            First Name : <input type="text" name="firstname"><br>
+            Last  Name : <input type="text" name="lastname"><br>
+            Email-Id   : <input type="email" name="email_id"><br>
+            Password   : <input type="password" name="password"><br>
+            <div>
+                <input type="submit" value="Sign up" class="registerBtn">
+            </div>
+            <div class="login">
+                Already have an account !
+                </br>
+                <a class="login a" href="login.html">Login</a>
+            </div>
+        </form>
+
+    </body>
+</html>
